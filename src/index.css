@@ -22,6 +22,11 @@ body {
   gap: 70%;
 }
 
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
 .info {
   position: relative;
 }
