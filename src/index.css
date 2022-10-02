@@ -1,0 +1,176 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  background-color: #111111;
+  --fadedfontcolor: #9c9c9c;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70%;
+}
+
+.info {
+  position: relative;
+}
+
+
+.hero {
+  width: 100%;
+  border-bottom: 1px solid #333333;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  background-color: #090909;
+}
+
+.infosection {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  padding-top: 125px;
+}
+
+.infosection h1, p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.infosection h1 {
+  font-size: 2.2rem;
+}
+
+.infosection p {
+  font-size: 0.875rem;
+  margin: 10px 0;
+  color: var(--fadedfontcolor);
+}
+
+.sideandmain {
+  height: auto;
+  width: auto;
+  display: flex;
+  margin-top: 42px;
+  position: relative;
+  gap: 7%;
+}
+
+.sidebar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 26%;
+  font-size: 0.875rem;
+}
+
+.sidebar p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+}
+
+.sidebar h3 {
+  margin: 10px 0 5px 0;
+  font-size: 0.875rem;
+}
+
+.biocard {
+  height: auto;
+  width: auto;
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 0.875rem;
+  margin-bottom: 30px;
+}
+
+.image {
+  height: 120px;
+  width: 100%;
+  background-color: #161616;
+  border-radius: 10px;
+}
+
+.section {
+  position: relative;
+  width: auto;
+  background-color: #090909;
+  border-radius: 10px;
+  border: 2px solid #333333;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+.section h3 {
+  border-bottom: 1px solid #333333;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.section p {
+  margin-top: 20px;
+}
+
+.section a {
+  text-decoration: none;
+  color: var(--fadedfontcolor);
+  margin: auto;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.projectcards{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.project {
+  width: auto;
+  height: 130px;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  background-color: #090909;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.skillset {
+  border-bottom: 1px solid #333333;
+  padding: 15px 15px 20px 15px;
+
+}
+
+.links {
+  margin: 20px 0;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 80px;
+}
+
+.links a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0 5px 30px;
+  color: #fff;
+}
