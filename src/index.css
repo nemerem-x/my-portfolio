@@ -183,13 +183,13 @@ body {
   margin: 20px 0;
 }
 
-.project img {
+/* .project img {
   width: 100%;
   height: 100%;
   object-position: left top;
   object-fit: cover;
   border-radius: 10px;
-}
+} */
 
 .projectname {
   overflow: hidden;
@@ -275,6 +275,11 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .project {
+    background: rgba(76, 175, 80, 0.3)
+  }
+
 
   .projectcards {
     width: 100%;
