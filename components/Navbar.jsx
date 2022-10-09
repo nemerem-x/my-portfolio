@@ -5,7 +5,7 @@ export default function Navbar() {
 
   return (
     <div className='nav'>
-        <img src="" alt="logo" />
+        <a href="#"><img src="" alt="logo" /></a>
         <a href='#'>Contact</a>
     </div>
   )
