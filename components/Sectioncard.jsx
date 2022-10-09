@@ -2,7 +2,7 @@ import '../src/index.css'
 import Project from './Project'
 import { useState } from 'react'
 
-export default function Sectioncard(props) {
+export default function Sectioncard({name, instruction, children}) {
 
   const [toggle, setToggle] = useState(false)
 
@@ -10,17 +10,31 @@ export default function Sectioncard(props) {
     setToggle(prevState => !prevState)
   }
 
+  const projects = children.map(ele => {
+    return (
+      <Project 
+        key={ele.id} 
+        img={ele.src} 
+        title={ele.title} 
+        info={ele.info}
+        link={ele.link}
+      />
+      )
+  })
+    
   return (
     <div className='section' style={{height:toggle ? "auto" : "580px"}}>
-        <h3>{props.children}</h3>
-        <p>Click on a {props.children} project to see the magic.</p>
-        <Project img={props.src}/>
-        <Project/>
-        <Project/>
-        {
-          toggle && <Project/>
+
+        <h3>{name}</h3>
+        <p>{instruction}</p>
+
+        {projects}
+
+        {children.length >= 4 && 
+          <div className="showmorebtn">
+            <a onClick={expansionToggle}>{toggle ? "Show less" : "Show more"}</a>
+          </div>
         }
-        <center><a onClick={expansionToggle}>{toggle ? "Show less" : "Show more"}</a></center>
     </div>
   )
 }

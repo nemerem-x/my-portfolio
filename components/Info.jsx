@@ -1,32 +1,25 @@
 import '../src/index.css'
 import Sidebar from './Sidebar'
 import Sectioncard from './Sectioncard'
-import watchlist from '../src/assets/watchlist_png.png'
+import {projectJavascript, projectReact} from '../src/projects'
 
 export default function Info() {
 
   return (
     <div className='info'>
-        <div className="hero">
-
-        </div>
+        
         <div className="infosection">
-            <h1>Hi, I’m Nemerem</h1>
-            <p>Frontend Developer | UI/UX/Graphic Designer</p>
+
             <div className="sideandmain">
                 <Sidebar/>
                 <div className="projectcards">
 
-                  <Sectioncard>
-                    React
+                  <Sectioncard name={"React"} instruction={"Click on a react project to see the magic."}>
+                    {projectReact}
                   </Sectioncard>
 
-                  <Sectioncard src={watchlist}>
-                    Vanilla Javascript
-                  </Sectioncard>
-
-                  <Sectioncard>
-                    Creative Design
+                  <Sectioncard name={"Vanilla Javascript"} instruction={"Click on a vanilla JS project to see the magic."}>
+                    {projectJavascript}
                   </Sectioncard>
 
                 </div>
