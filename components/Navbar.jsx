@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import '../src/index.css'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
 
   return (
     <div className='nav'>
-        <a href="#"><img src="" alt="logo" /></a>
-        <a href='#'>Contact</a>
+      <Link to="/">Nemerem</Link>
+      <Link id='contactbtn' to="/contact">Contact</Link>
     </div>
   )
 }

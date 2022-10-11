@@ -1,16 +1,26 @@
-import { useState } from 'react'
+import Home from '../pages/Home'
+import Contact from '../pages/Contact'
 import Navbar from '../components/Navbar'
-import Info from '../components/Info'
-import Hero from '../components/Hero'
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
 
   return (
-    <main>
-      <Navbar />
-      <Hero/>
-      <Info/>
-    </main>
+    <>
+      <Navbar/>
+
+      <Routes>
+
+        <Route exact path="/" element={<Home/>} />
+
+        <Route path='/contact' element={<Contact/>} />
+
+        {/* <Route path="/contact">
+          <Contact/>
+        </Route> */}
+
+      </Routes>
+    </>
   )
 }
 
