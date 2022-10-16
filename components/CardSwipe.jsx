@@ -50,12 +50,15 @@ function CardSwipe({name, handleClick, index}) {
     return (
         <div 
             onMouseMove={move}
+            onTouchMove={move}
             onMouseDown={hold}
+            onTouchStart={hold}
             onMouseUp={up}
+            onTouchEnd={up}
             className={"card" + ' ' + `card${index}` + ' ' + `${swipeAnimate ? "swiped" : ''}` }
             style={style}
         >
-            <h2>{name.name}</h2>
+            <div>{name.name}</div>
         </div>
     )
 
