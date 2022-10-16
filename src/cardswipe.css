@@ -1,0 +1,79 @@
+#root {
+    max-width: 1280px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .app {
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .allcards {
+    position: relative;
+    height: 160px;
+    width: 320px;
+    background-color: blue;
+  } */
+  
+  .card {
+    height: 160px;
+    width: 320px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .5s;
+  }
+  
+  h2 {
+    margin-top: 60px;
+  }
+  
+  .card0 {
+    z-index: 5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .card1 {
+    z-index: 4;
+    transform: translate(-50%, -60%) scale(0.95);
+  }
+  
+  .card2 {
+    z-index: 3;
+    transform: translate(-50%, -70%) scale(0.9);
+  }
+  
+  .card3 {
+    z-index: 2;
+    transform: translate(-50%, -80%) scale(0.85);
+  }
+  
+  .swiped {
+    animation: move 1.3s ease;
+    transition: all 1s;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-50%, -50%);
+    }
+    25% {
+      transform: translate(-50%, -200%) rotateZ(15deg) scale(0.85);
+    }
+    75% {
+      transform: translate(-50%, -80%) rotateZ(0deg) scale(0.85);
+    }
+    100% {
+      transform: translate(-50%, -50%);
+    }
+  }
