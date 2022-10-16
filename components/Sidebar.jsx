@@ -2,6 +2,7 @@ import '../src/index.css'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
 
@@ -43,6 +44,8 @@ export default function Sidebar() {
             <a href='https://github.com/nemerem-x' target="_blank" >Git Repository <FontAwesomeIcon size="xs" icon={faArrowUpRightFromSquare} /></a>
             <a href='https://opensea.io/0x_nemerem' target="_blank" >Non-Fungible Tokens <FontAwesomeIcon size="xs" icon={faArrowUpRightFromSquare} /></a>
             <a href='https://www.behance.net/pilotpreci57ca' target="_blank" >Behance <FontAwesomeIcon size="xs" icon={faArrowUpRightFromSquare} /></a>
+            <Link to="/swipecard">Swipe Cards</Link>
+
           </div>
           <div className="experience">
             <h3>Education:</h3>
