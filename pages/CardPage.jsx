@@ -7,21 +7,21 @@ function CardPage() {
 
   const [allCards, setAllCards] = useState(cards)
   const [swiped, setSwiped] = useState([])
-
+// console.log(allCards)
   const click = (e) => {
     const fewCards = allCards.filter(ele => ele.name != e.target.innerText)
     const swipedCard = allCards.filter(ele => ele.name == e.target.innerText)
-
-    setSwiped(swipedCard)
+    
+    // setSwiped(swipedCard)
+    // setTimeout(()=>{
+    //   setAllCards([...fewCards])
+    // },1000)
+    
+    setAllCards([...fewCards, ...swipedCard])
     setTimeout(()=>{
-      setAllCards([...fewCards])
-    },1000)
-
-    setTimeout(()=>{
-      setAllCards(prevState => [...prevState, ...swipedCard])
     },1200)
   }
-  
+
   const myCards = allCards.map((card, index) => {
     return (
       <CardSwipe 

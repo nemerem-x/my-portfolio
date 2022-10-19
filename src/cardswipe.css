@@ -1,75 +1,102 @@
 
-  
-  /* body {
-    margin: 0;
-  } */
-  
-  .app {
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.app {
+  /* position: relative; */
+  /* min-height: 100vh; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  /* margin: auto;
+  margin-top: 100px; */
+}
+
+/* .name {
+  user-select: none;
+} */
+
+/* .allcards {
+  position: relative;
+  height: 160px;
+  width: 320px;
+  background-color: blue;
+} */
+
+h2 {
+  margin:0;
+  height: 100%;
+}
+
+.card {
+  margin:auto;
+  height: 160px;
+  width: 320px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.card0 {
+  z-index: 5;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.card1 {
+  z-index: 4;
+  transform: translate(-50%, -60%) scale(0.95);
+}
+
+.card2 {
+  z-index: 3;
+  transform: translate(-50%, -70%) scale(0.9);
+}
+
+.card3 {
+  z-index: 2;
+  transform: translate(-50%, -80%) scale(0.85);
+}
+
+.swiped {
+  animation: move 1.3s ease;
+  -moz-animation: move 1.3s ease;
+  -webkit-animation: move 1.2s ease;
+  /* transition: all 1s; */
+  display: block;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, -50%);
   }
-  
-  /* .allcards {
-    position: relative;
-    height: 160px;
-    width: 320px;
-    background-color: blue;
-  } */
-  
-  .card {
-    height: 160px;
-    width: 320px;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: all .5s;
+  25% {
+    transform: translate(-50%, -200%) rotateZ(15deg) scale(0.80);
   }
-  
-  h2 {
-    margin-top: 60px;
+  75% {
+    transform: translate(-50%, -80%) rotateZ(0deg) scale(0.85);
   }
-  
-  .card0 {
-    z-index: 5;
-    transform: translate(-50%, -50%) scale(1);
+  100% {
+    transform: translate(-50%, -50%) scale(0.80);
   }
-  
-  .card1 {
-    z-index: 4;
-    transform: translate(-50%, -60%) scale(0.95);
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
   }
-  
-  .card2 {
-    z-index: 3;
-    transform: translate(-50%, -70%) scale(0.9);
+  25% {
+    transform: translate(-50%, -200%) rotateZ(15deg) scale(0.85);
+    -webkit-transform: translate(-50%, -200%) rotateZ(15deg) scale(0.8);
   }
-  
-  .card3 {
-    z-index: 2;
-    transform: translate(-50%, -80%) scale(0.85);
+  75% {
+    transform: translate(-50%, -80%) rotateZ(0deg) scale(0.85);
+    -webkit-transform: translate(-50%, -80%) rotateZ(0deg) scale(0.85);
   }
-  
-  .swiped {
-    animation: move 1.3s ease;
-    transition: all 1s;
+  100% {
+    transform: translate(-50%, -50%) scale(0.80);
+    -webkit-transform: translate(-50%, -50%) scale(0.80);
   }
-  
-  @keyframes move {
-    0% {
-      transform: translate(-50%, -50%);
-    }
-    25% {
-      transform: translate(-50%, -200%) rotateZ(15deg) scale(0.85);
-    }
-    75% {
-      transform: translate(-50%, -80%) rotateZ(0deg) scale(0.85);
-    }
-    100% {
-      transform: translate(-50%, -50%);
-    }
-  }
+}
