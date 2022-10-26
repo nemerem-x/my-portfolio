@@ -21,7 +21,7 @@ const projectJavascript = [
     src:'../unitconverter.jpg',
     title: "Unit Converter",
     info: "Input a number and get it converted to other units and if input is empty, you get a css prompt.",
-    link: ""
+    link: "https://starlit-sunburst-099671.netlify.app/"
   }
 ]
 

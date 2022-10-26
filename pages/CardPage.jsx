@@ -7,15 +7,10 @@ function CardPage() {
 
   const [allCards, setAllCards] = useState(cards)
   const [swiped, setSwiped] = useState([])
-// console.log(allCards)
+
   const click = (e) => {
     const fewCards = allCards.filter(ele => ele.name != e.target.innerText)
     const swipedCard = allCards.filter(ele => ele.name == e.target.innerText)
-    
-    // setSwiped(swipedCard)
-    // setTimeout(()=>{
-    //   setAllCards([...fewCards])
-    // },1000)
     
     setAllCards([...fewCards, ...swipedCard])
     setTimeout(()=>{
@@ -36,6 +31,8 @@ function CardPage() {
 
   return (
     <div className="app">
+      <h1>Swipe-left on mobile </h1>
+      <h1>Click on Desktop</h1>
       <div className="allcards">
        {myCards} 
       </div>
