@@ -27,6 +27,14 @@ const projectJavascript = [
 
 const projectReact = [
   {
+    id: 3,
+    technology:"React",
+    src:'../weatherapp.jpg',
+    title: "WeatherApp",
+    info: "WeatherApp built with React and Openweathermap API",
+    link: "  https://stalwart-kataifi-33cc06.netlify.app/"
+  },
+  {
     id: 1,
     technology:"React",
     src:'../quizapp.jpg',
@@ -42,6 +50,7 @@ const projectReact = [
     info: "A game to undertstand React",
     link: "https://magenta-speculoos-3ac95e.netlify.app/"
   }
+  
 ]
 
 export {projectJavascript, projectReact}
