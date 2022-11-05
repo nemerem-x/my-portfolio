@@ -32,14 +32,17 @@ body {
 }
 
 .info {
-  position: absolute;
+  position: relative;
   width: 75%;
-  top: 230px;
+  margin-top: 13em;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .hero {
+  position: absolute;
+  z-index: -1;
+  top: 0;
   width: 100%;
   border-bottom: 1px solid #333333;
   height: 360px;
@@ -154,14 +157,17 @@ body {
   transform: translateX(-50%);
   text-decoration: none;
   color: var(--fadedfontcolor);
-  cursor: pointer;
   font-size: 0.875rem;
   background-color: #090909;
   width: 100%;
-  height: 55px;
+  height: 49px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.showmorebtn a {
+  cursor: pointer;
 }
 
 .projectcards{
@@ -214,7 +220,7 @@ body {
 
 #contactbtn {
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 0.5em 1em;
 }
 
@@ -230,6 +236,23 @@ body {
 
 #expandsidebar {
   display: none;
+}
+
+.footer {
+  width: 100%;
+  height: 6em;
+  margin-top: 2em;
+  background-color: #090909;
+  border-top: 2px solid #333333;
+  padding: 1.5em 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+}
+
+.footer img {
+  width: 40px;
 }
 
 @media (max-width: 768px) {
@@ -286,7 +309,8 @@ body {
   }
 
   .project {
-    background: rgba(76, 175, 80, 0.3)
+    background: rgba(76, 175, 80, 0.3);
+    background-repeat: no-repeat;
   }
 
 
