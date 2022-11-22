@@ -16,7 +16,7 @@ export default function Sidebar() {
       <div className='sidebar'>
           <div className="biocard">
               <div className="image"></div>
-              <h3>Bio</h3>
+              <h3>About</h3>
               <p> 
                   Frontend developer passionate about 
                   beautiful designs, functional web 

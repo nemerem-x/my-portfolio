@@ -31,6 +31,11 @@ body {
   color: white;
 }
 
+.nav img {
+  height: 100%;
+  width: 40px;
+}
+
 .info {
   position: relative;
   width: 75%;
@@ -219,9 +224,15 @@ body {
 }
 
 #contactbtn {
-  border: 1px solid white;
+  border: 1px solid #9468EE;
+  background-color: #221933;
+  font-size: 0.9rem;
   border-radius: 10px;
   padding: 0.5em 1em;
+}
+
+#contactbtn:hover {
+  background-color: #4c3773;
 }
 
 .contact {

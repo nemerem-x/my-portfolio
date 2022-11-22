@@ -5,11 +5,7 @@ export default function Footer() {
 
   return (
         <div className="footer">
-            <a href="https://github.com/nemerem-x" 
-            target="_blank" 
-            >
-                <img src={gitlogo} alt="github" />
-            </a>
+                <p style={{color: "#515151"}}>&copy; 2022</p>
         </div>
   )
 }
