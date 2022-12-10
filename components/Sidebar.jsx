@@ -30,7 +30,7 @@ export default function Sidebar() {
           </div>
           <div className="skillset">
             <h3>Technologies/tools:</h3>
-            <p>HTML5/CSS3, Javascript, React, Git, GitHub, RESTful API. <br></br> Next.js(in-view).</p>
+            <p>HTML5/CSS3, Javascript, React, React Query, Firebase, Recoil, Git, GitHub, RESTful API and Vite. <br></br> Next.js(in-view).</p>
             
             <h3>Databases:</h3>
             <p>-</p>

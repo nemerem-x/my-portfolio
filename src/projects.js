@@ -27,11 +27,19 @@ const projectJavascript = [
 
 const projectReact = [
   {
+    id: 5,
+    technology:"React",
+    src:'../watchlist_react.jpg',
+    title: "Movie Watchlist",
+    info: "Movie Watchlist built with React, Firebase, Recoil, React Query and TMDB API",
+    link: "https://github.com/nemerem-x/Movie-Watchlist-React"
+  },
+  {
     id: 3,
     technology:"React",
     src:'../weatherapp.jpg',
     title: "WeatherApp",
-    info: "WeatherApp built with React and Openweathermap API",
+    info: "WeatherApp built with React, Recoil and Openweathermap API",
     link: "  https://stalwart-kataifi-33cc06.netlify.app/"
   },
   {
