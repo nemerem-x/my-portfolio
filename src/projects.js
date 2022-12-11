@@ -32,7 +32,7 @@ const projectReact = [
     src:'../watchlist_react.jpg',
     title: "Movie Watchlist",
     info: "Movie Watchlist built with React, Firebase, Recoil, React Query and TMDB API",
-    link: "https://github.com/nemerem-x/Movie-Watchlist-React"
+    link: "https://singular-speculoos-88bb99.netlify.app/"
   },
   {
     id: 3,
