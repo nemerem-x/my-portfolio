@@ -1,8 +1,34 @@
 import '../src/index.css'
-import { useState } from 'react'
+import javascript from '/javascript.svg'
+import react from '/react.svg'
+import recoil from '/recoil.svg'
+import react_query from '/react-query.svg'
+import firebase from '/firebase.svg'
+import tmdb from '/tmdb.png'
+import openweathermap from '/openweathermap.png'
+import moralis from '/moralis.png'
+
 
 export default function Project(props) {
 
+  const logos = [
+    {logo: react, name: "react"},
+    {logo: react_query, name: "react_query"},
+    {logo: recoil, name: "recoil"}, 
+    {logo: javascript, name: "javascript"}, 
+    {logo: firebase, name: "firebase"}, 
+    {logo: tmdb, name: "tmdb"}, 
+    {logo: openweathermap, name: "openweathermap"}, 
+    {logo: moralis, name: "moralis"}, 
+  ]
+
+  const arrayCheck = logos.filter(ele => props.stack.includes(ele.name))
+
+  const stack = arrayCheck.map(ele => {
+    return (
+      <img key={ele.name} src={ele.logo} title={ele.name} alt='tech'/>
+    )
+  })
 
   const visit = () => {
     window.location.href = `${props.link}`
@@ -20,8 +46,9 @@ export default function Project(props) {
       style={style} 
     >        
       <div className="projectname">
-        <h2 style={{margin:"0", fontSize:"1.5rem"}}>{props.title}</h2>
-        <p style={{margin:"0"}}>{props.info}</p>
+        <h2>{props.title}</h2>
+        {/* <p style={{margin:"0"}}>{props.info}</p> */}
+        {stack}
       </div>
       
     </div>

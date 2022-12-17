@@ -196,12 +196,22 @@ body {
 }
 
 .projectname {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
   width: 60%;
   height: auto;
   padding: 1.25em;
   border-radius: 10px;
+}
+
+.projectname img {
+  width: auto;
+  height: 20px;
+  margin: 0em .3em;
+}
+
+.projectname h2 {
+  margin: 0 0 .5em 0;
 }
 
 .skillset {

@@ -18,6 +18,7 @@ export default function Sectioncard({name, instruction, children}) {
         title={ele.title} 
         info={ele.info}
         link={ele.link}
+        stack={ele.stack}
       />
       )
   })
