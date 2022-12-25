@@ -30,13 +30,22 @@ const projectJavascript = [
 
 const projectReact = [
   {
+    id: 6,
+    technology:"React",
+    src:'../store.jpg',
+    title: "Online Store (in dev...)",
+    info: "Ecommerce store built with React, Nextjs.",
+    link: "https://strore-nextjs-lish.vercel.app/",
+    stack: ["react", "nextjs", "firebase"]
+  },
+  {
     id: 5,
     technology:"React",
     src:'../watchlist_react.jpg',
     title: "Movie Watchlist",
     info: "Movie Watchlist built with React, Firebase, Recoil, React Query and TMDB API",
     link: "https://singular-speculoos-88bb99.netlify.app/",
-    stack: ["react", "react_query", "recoil", "firebase", "tmdb"]
+    stack: ["react", "react_query", "recoil", "firebase", "tmdb", "vite"]
   },
   {
     id: 3,
@@ -45,7 +54,7 @@ const projectReact = [
     title: "WeatherApp",
     info: "WeatherApp built with React, Recoil and Openweathermap API",
     link: "  https://stalwart-kataifi-33cc06.netlify.app/",
-    stack: ["react", "recoil", "openweathermap"]
+    stack: ["react", "recoil", "openweathermap", "vite"]
   },
   {
     id: 1,
@@ -54,7 +63,7 @@ const projectReact = [
     title: "Quiz App",
     info: "Fetches questions and options data through API and player is shown the correct answers after submitting.",
     link: "https://joyful-kashata-b88de8.netlify.app/",
-    stack: ["react"]
+    stack: ["react", "vite"]
   },
   {
     id: 4,
@@ -63,7 +72,7 @@ const projectReact = [
     title: "Wallet",
     info: "...in progress (Add and Manage Cards)",
     link: "/swipecard",
-    stack: ["react"]
+    stack: ["react", "vite"]
   },
   {
     id: 2,
@@ -72,7 +81,7 @@ const projectReact = [
     title: "Tenzies",
     info: "A game to undertstand React",
     link: "https://magenta-speculoos-3ac95e.netlify.app/",
-    stack: ["react"]
+    stack: ["react", "vite"]
   }
   
 ]

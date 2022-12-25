@@ -7,19 +7,22 @@ import firebase from '/firebase.svg'
 import tmdb from '/tmdb.png'
 import openweathermap from '/openweathermap.png'
 import moralis from '/moralis.png'
-
+import next from '/nextjs.png'
+import vite from '/vite.png'
 
 export default function Project(props) {
 
   const logos = [
     {logo: react, name: "react"},
+    {logo: next, name: "nextjs"},
     {logo: react_query, name: "react_query"},
     {logo: recoil, name: "recoil"}, 
     {logo: javascript, name: "javascript"}, 
     {logo: firebase, name: "firebase"}, 
     {logo: tmdb, name: "tmdb"}, 
     {logo: openweathermap, name: "openweathermap"}, 
-    {logo: moralis, name: "moralis"}, 
+    {logo: moralis, name: "moralis"},
+    {logo: vite, name: "vite"},
   ]
 
   const arrayCheck = logos.filter(ele => props.stack.includes(ele.name))
