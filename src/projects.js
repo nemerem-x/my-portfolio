@@ -36,7 +36,7 @@ const projectReact = [
     title: "Online Store (in dev...)",
     info: "Ecommerce store built with React, Nextjs.",
     link: "https://strore-nextjs-lish.vercel.app/",
-    stack: ["react", "nextjs", "firebase"]
+    stack: ["react", "nextjs", "recoil", "firebase"]
   },
   {
     id: 5,
